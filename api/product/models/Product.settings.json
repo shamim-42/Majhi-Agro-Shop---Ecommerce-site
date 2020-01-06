@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": "Product Information"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "product_name": {
+      "required": true,
+      "type": "string"
+    },
+    "product_price": {
+      "type": "float",
+      "required": true
+    },
+    "product_weight_unit": {
+      "type": "string"
+    },
+    "product_weight": {
+      "type": "float"
+    },
+    "product_source_from": {
+      "type": "string"
+    },
+    "product_attribute": {
+      "type": "json"
+    }
+  }
+}
