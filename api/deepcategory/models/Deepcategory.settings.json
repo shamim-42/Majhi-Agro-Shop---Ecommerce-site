@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "deepcategories",
+  "info": {
+    "name": "deepcategory",
+    "description": "Deep Category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "deepcategory_name": {
+      "type": "string"
+    },
+    "fk_category": {
+      "model": "category",
+      "via": "deepcategories"
+    },
+    "fk_subcategory": {
+      "model": "subcategory",
+      "via": "deepcategories"
+    },
+    "products_for_deepcategory": {
+      "collection": "product",
+      "via": "fk_deepcategory"
+    }
+  }
+}

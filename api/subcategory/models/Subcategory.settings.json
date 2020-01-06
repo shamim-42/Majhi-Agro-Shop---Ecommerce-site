@@ -1,9 +1,9 @@
 {
   "connection": "default",
-  "collectionName": "categories",
+  "collectionName": "subcategories",
   "info": {
-    "name": "category",
-    "description": "Product Category"
+    "name": "subcategory",
+    "description": "Sub Category"
   },
   "options": {
     "increments": true,
@@ -11,20 +11,20 @@
     "comment": ""
   },
   "attributes": {
-    "category_name": {
+    "subcategory_name": {
       "type": "string"
     },
-    "subcategories": {
-      "collection": "subcategory",
-      "via": "fk_category"
+    "fk_category": {
+      "model": "category",
+      "via": "subcategories"
     },
     "deepcategories": {
       "collection": "deepcategory",
-      "via": "fk_category"
+      "via": "fk_subcategory"
     },
-    "products_category": {
+    "products_for_subcategory": {
       "collection": "product",
-      "via": "fk_category"
+      "via": "fk_subcategory"
     }
   }
 }

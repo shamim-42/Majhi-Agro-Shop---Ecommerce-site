@@ -30,6 +30,18 @@
     },
     "product_attribute": {
       "type": "json"
+    },
+    "fk_category": {
+      "model": "category",
+      "via": "products_category"
+    },
+    "fk_subcategory": {
+      "model": "subcategory",
+      "via": "products_for_subcategory"
+    },
+    "fk_deepcategory": {
+      "model": "deepcategory",
+      "via": "products_for_deepcategory"
     }
   }
 }

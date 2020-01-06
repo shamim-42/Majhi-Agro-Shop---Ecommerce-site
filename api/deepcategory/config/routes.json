@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/deepcategories",
+      "handler": "Deepcategory.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/deepcategories/count",
+      "handler": "Deepcategory.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/deepcategories/:id",
+      "handler": "Deepcategory.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/deepcategories",
+      "handler": "Deepcategory.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/deepcategories/:id",
+      "handler": "Deepcategory.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/deepcategories/:id",
+      "handler": "Deepcategory.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
